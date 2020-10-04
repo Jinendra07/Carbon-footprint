@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int co,year,tree;
+    float co2;
+    printf("HELLO FELLA,\nThe Earth is being damaged by the release of large amounts of carbon,\nSo tracing the amount of carbon being released and taking suitable actions accordingly is the only solution to save earth.\n");
+    printf("Here the only doable solution will be planting, just the exact number of trees required in adequate amount of land.\nSo if you want to know how many trees are reqiured to solve the excess amount of carbon release in your area then please answer the following questions:\n");
+    printf("i)Please enter the amount of CO2 being released around your area in a day(in KGs): ");
+    scanf("%f",&co2);
+    printf("\nii)Please enter the amount of CO being released around your area in PPM: ");
+    scanf("%d",&co);
+    year=(co2)*365;
+    tree=year/20.5;
+    printf("\nii)To reduce the excessive carbon emission in your area you should have '%d' trees in your area",tree);
+    if(co<=51)
+    printf("\nCarbon monoxide is in low level, if you plant the above mentioned number of trees then the problem will be solved");
+    else if(co>51 && co<=100)
+    printf("\nCarbon monoxide is in mid level, if you plant a few more trees than the required number of trees, then the problem will be solved");
+    else if(co>100)
+    printf("\nCarbon monoxide is in high level, if you plant twice as many as trees than the required number of trees, then the problem will be controlled");
+    else
+    printf("invalid input");
+    printf("\n\n\n\nDid You Know");
+    printf("\nA baby tree absorbs 5.9kg CO2 per year, while a 10 year old tree absorbs 22kg CO2 per year.");
+    return 0;
+}
